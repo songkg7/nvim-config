@@ -6,9 +6,6 @@ vim.api.nvim_exec('language en_US', true)
 -- copy to clipboard
 vim.api.nvim_exec('set clipboard=unnamedplus', true)
 
-vim.g.copilot_no_tab_map = true
-vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
-
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -20,6 +17,9 @@ vim.opt.termguicolors = true
 require("nvim-tree").setup()
 
 -- copilot
+vim.g.copilot_no_tab_map = true
+vim.api.nvim_set_keymap("i", "<C-J>", 'copilot#Accept("<CR>")', { silent = true, expr = true })
+
 require('copilot').setup({
   panel = {
     enabled = true,
