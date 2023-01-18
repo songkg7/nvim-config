@@ -35,7 +35,7 @@ db.custom_center = {
   {
     icon = '  ',
     desc = 'Find Word             ',
-    action = 'Rg',
+    action = 'FzfLua live_grep',
   },
   {
     icon = '  ',
