@@ -227,6 +227,10 @@ local function init()
     config = "require('plugins.indent-blankline')",
     event = 'VimEnter',
   }
+
+  use {
+    'wakatime/vim-wakatime'
+  }
 end
 
 local plugins = setmetatable({}, {
