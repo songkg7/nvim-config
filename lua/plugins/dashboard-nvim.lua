@@ -30,7 +30,7 @@ db.custom_center = {
   {
     icon = '  ',
     desc = 'Current Directory     ',
-    action = 'FZF',
+    action = 'FzfLua files',
   },
   {
     icon = '  ',
