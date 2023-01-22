@@ -67,6 +67,11 @@ local function init()
   -- }
 
   use {
+    'sidebar-nvim/sidebar.nvim',
+    config = "require('plugins.sidebar-nvim')"
+  }
+
+  use {
     'farmergreg/vim-lastplace',
     config = "require('plugins.vim-lastplace')",
     event = "BufWinEnter",
